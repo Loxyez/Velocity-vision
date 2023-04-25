@@ -16,6 +16,7 @@ class MyMapPageState extends State<MapSample> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: GoogleMap(
+        myLocationEnabled: true,
         mapType: MapType.normal,
         initialCameraPosition: CameraPosition(
           target: LatLng(13.7650836, 100.5379664),
